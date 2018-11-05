@@ -18,7 +18,7 @@ public class EX3_EX4_VerDirParametros {
 						f2.isFile(), f2.isDirectory());
 			}
 		} catch (Exception E) {
-			System.out.print("ERROR. Directorio no valido.");
+			System.out.print("ERROR salvaje aparecio, el directorio no es correcto.");
 		}
 	}
 }

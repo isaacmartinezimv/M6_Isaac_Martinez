@@ -5,12 +5,12 @@ package ClassFile;
 import java.io.*;
 public class EX1_VerDirRutaAboluta{
 	public static void main (String[] args) {
-		String dir = "C:\\Users\\Feuer\\Downloads"; // directorio actual
+		String dir = "C:\\Users\\Isaac\\Downloads"; // directorio actual
 
 		try {
 			File f = new File(dir);
 			String[] archivos = f.list();
-			System.out.printf("Ficheros en el directorio actual: %d %n", archivos.length);
+			System.out.printf("Cantidad de ficheros en el directorio seleccionado: %d %n", archivos.length);
 
 			for (int i = 0; i < archivos.length; i++){
 				File f2 = new File(f, archivos[i]);
@@ -19,7 +19,7 @@ public class EX1_VerDirRutaAboluta{
 			}
 			
 		} catch (Exception E) {
-			System.out.print("ERROR. Directorio no valido.");
+			System.out.print("Error salvaje aparecio, el directorio no ha sido encontrado");
 		}
 	}
 }

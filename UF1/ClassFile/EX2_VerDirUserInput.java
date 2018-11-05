@@ -5,10 +5,10 @@ import java.io.*;
 public class EX2_VerDirUserInput{
 	public static void main (String[] args) throws IOException {
 		
-		System.out.print("Introduce el directorio que deseas listar: ");
+		System.out.print("Introduce el directorio a listar: ");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		String userInput = reader.readLine();
-		String dir = userInput; // Directorio introducido
+		String dir = userInput; 
 
 		try {
 			File f = new File(dir);
@@ -21,7 +21,7 @@ public class EX2_VerDirUserInput{
 						f2.isFile(), f2.isDirectory());
 			}
 		} catch (Exception E) {
-			System.out.print("ERROR. Directorio no valido.");
+			System.out.print("ERROR salvaje aparecio, el directorio no ha sido encontrado.");
 		}
 	}
 }

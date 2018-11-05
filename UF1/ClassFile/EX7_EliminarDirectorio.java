@@ -7,7 +7,6 @@ habrás de eliminar todos los archivos que se encuentren dentro del directorio.
  *  */
 
 import java.io.*;
-import java.nio.file.Files;
 
 
 public class EX7_EliminarDirectorio {
@@ -21,14 +20,14 @@ public class EX7_EliminarDirectorio {
 			        file.delete();
 			    }
 			    dir.delete();
-				System.out.println("Ficheros borrados con exito");
+				System.out.println("Los ficheros han sido borrados con exito");
 
 			} else {
-				System.out.println("No existe el directorio");
+				System.out.println("El directorio seleccionado no existe");
 			}
 			
 		} catch (Exception E ) {
-			System.out.println("Se ha encontrado un error inesperado en la ejecucion del programa");
+			System.out.println("Error salvaje aparecio, algo funciono de manera inesperada.");
 		}
 
 	}
