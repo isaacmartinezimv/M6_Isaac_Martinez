@@ -1,4 +1,4 @@
-package ClassFile;
+package Bateria1_GestionFicheros;
 /* EJERCICIO 6. Crear directorio mediante codigo de ejemplo */
 
 import java.io.*;

@@ -1,8 +1,8 @@
-package ClassFile;
+package Bateria1_GestionFicheros;
 /* EJERCICIO 7
  * 
  *  Realiza un programa que elimine el directorio creado en el punto anterior. Para ello
-habrás de eliminar todos los archivos que se encuentren dentro del directorio.
+habrï¿½s de eliminar todos los archivos que se encuentren dentro del directorio.
 
  *  */
 

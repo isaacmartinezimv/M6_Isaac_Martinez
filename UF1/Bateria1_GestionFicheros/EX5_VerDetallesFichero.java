@@ -1,6 +1,6 @@
-package ClassFile;
+package Bateria1_GestionFicheros;
 /* EJERCICIO 5. Ver Nombre, ruta relativa, ruta absoluta, 
-permisos y tamaño de un fichero. */
+permisos y tamaï¿½o de un fichero. */
 
 import java.io.*;
 public class EX5_VerDetallesFichero {
@@ -23,7 +23,7 @@ public class EX5_VerDetallesFichero {
 
 			System.out.println("El fichero '" + fileName + "' se encuentra en la ruta:\n\tRUTA RELATIVA: "+ relativePath+ "\n\tRUTA ABSOLUTA: "+ absolutePath);
 			System.out.println("\nLos permisos del fichero son:\n\tLECTURA: "+ readPermits + "\n\tESCRITURA: "+ writePermits + "\n\tEJECUCION: "+ executePermits);
-			System.out.println("\nEl tamaño total del fichero es de : " + fileSize + "bytes");
+			System.out.println("\nEl tamaï¿½o total del fichero es de : " + fileSize + "bytes");
 		} catch (Exception E) {
 			System.out.print("ERROR salvaje aparecio, el directorio no es correcto");
 		}
