@@ -1,4 +1,4 @@
-package Bateria1_GestionFicheros;
+package Bateria2_GestionFicheros;
 /* EJERCICIO 7
  * 
  *  Realiza un programa que elimine el directorio creado en el punto anterior. Para ello

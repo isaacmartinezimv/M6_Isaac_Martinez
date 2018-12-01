@@ -1,4 +1,4 @@
-package Bateria1_GestionFicheros;
+package Bateria2_GestionFicheros;
 
 // EJERCICIO 1. Ruta absoluta (PARA SISTEMA OPERATIVO WINDOWS)
 

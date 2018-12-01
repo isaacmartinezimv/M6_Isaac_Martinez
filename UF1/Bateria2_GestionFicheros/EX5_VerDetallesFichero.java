@@ -1,4 +1,4 @@
-package Bateria1_GestionFicheros;
+package Bateria2_GestionFicheros;
 /* EJERCICIO 5. Ver Nombre, ruta relativa, ruta absoluta, 
 permisos y tama�o de un fichero. */
 

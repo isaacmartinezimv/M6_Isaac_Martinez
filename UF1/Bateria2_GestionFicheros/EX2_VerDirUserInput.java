@@ -1,4 +1,4 @@
-package Bateria1_GestionFicheros;
+package Bateria2_GestionFicheros;
 // EJERCICIO 2. Introducir ruta por linea de comandos
 
 import java.io.*;

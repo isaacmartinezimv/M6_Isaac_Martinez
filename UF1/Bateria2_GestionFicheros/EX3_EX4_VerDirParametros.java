@@ -1,4 +1,4 @@
-package Bateria1_GestionFicheros;
+package Bateria2_GestionFicheros;
 /*EJERCICIO 3 y 4. Listar directorio introducido por parametros. 
 Error si el directorio no es valido. */
 
