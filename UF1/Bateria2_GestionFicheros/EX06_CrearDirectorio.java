@@ -2,7 +2,7 @@ package Bateria2_GestionFicheros;
 /* EJERCICIO 6. Crear directorio mediante codigo de ejemplo */
 
 import java.io.*;
-public class EX6_CrearDirectorio {
+public class EX06_CrearDirectorio {
 	public static void main(String[] args) {
 		File d = new File("NuevoDir");
 		File f1 = new File(d, "Fichero1.txt");
@@ -23,7 +23,6 @@ public class EX6_CrearDirectorio {
 		}
 		
 		f1.renameTo(new File(d, "Fichero1Nuevo"));
-		
 		try {
 			File f3 = new File("NuevoDir/Fichero3.txt");
 			f3.createNewFile();

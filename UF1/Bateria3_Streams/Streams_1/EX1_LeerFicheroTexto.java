@@ -1,6 +1,5 @@
 package Bateria3_Streams.Streams_1;
-
-// Prueba el código anterior
+// EJERCICIO 1. Prueba el código anterior
 
 import java.io.*;
 

@@ -1,4 +1,6 @@
 package Bateria3_Streams.Streams_3;
+/* EJERCICIO 2. Escribe un programa que, utilizando la clase BufferedWriter, escriba 10 filas de caracteres
+ * en un fichero de texto y despu�s de escribir cada fila salta una línea con el método newLine() */
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

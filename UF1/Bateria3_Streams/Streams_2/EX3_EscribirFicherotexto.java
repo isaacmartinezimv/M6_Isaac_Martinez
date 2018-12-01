@@ -1,4 +1,6 @@
 package Bateria3_Streams.Streams_2;
+/* EJERCICIO 3. Crea el siguiente array de String e inserta en el fichero las cadenas 
+ * una a una usando el método write (String str) */
 
 import java.io.*;
 

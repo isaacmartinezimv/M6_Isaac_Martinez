@@ -1,11 +1,14 @@
 package Bateria2_GestionFicheros;
-/*EJERCICIO 3 y 4. Listar directorio introducido por parametros. 
-Error si el directorio no es valido. */
+// EJERCICIO 2. Introducir ruta por linea de comandos.
 
 import java.io.*;
-public class EX3_EX4_VerDirParametros {
-	public static void main (String[] args) {
-		String dir = args[0]; // Directorio introducido por parametros
+public class EX02_VerDirUserInput{
+	public static void main (String[] args) throws IOException {
+		
+		System.out.print("Indica la ruta del directorio que quieres listar: ");
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		String userInput = reader.readLine();
+		String dir = userInput; 
 
 		try {
 			File f = new File(dir);
@@ -18,9 +21,7 @@ public class EX3_EX4_VerDirParametros {
 						f2.isFile(), f2.isDirectory());
 			}
 		} catch (Exception E) {
-			System.out.print("ERROR salvaje aparecio, el directorio no es correcto.");
+			System.out.print("ERROR salvaje aparecio, el directorio no ha sido encontrado.");
 		}
 	}
 }
-
-		

@@ -1,4 +1,5 @@
 package Bateria3_Streams.Streams_1;
+// EJERCICIO 2. Modifica el código anterior para que el programa vaya leyendo caracteres de 20 en 20.
 
 import java.io.File;
 import java.io.FileReader;

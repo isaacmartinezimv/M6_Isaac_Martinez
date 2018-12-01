@@ -1,5 +1,5 @@
 package Bateria3_Streams.Streams_2;
-
+// EJERCICIO 1. Copia el ejemplo anterior y pruébalo
 
 import java.io.*;
 public class EX1_EscribirFicheroTexto {

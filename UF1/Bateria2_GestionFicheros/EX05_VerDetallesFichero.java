@@ -3,7 +3,7 @@ package Bateria2_GestionFicheros;
 permisos y tama�o de un fichero. */
 
 import java.io.*;
-public class EX5_VerDetallesFichero {
+public class EX05_VerDetallesFichero {
 	public static void main (String[] args) throws IOException {
 		
 		System.out.print("Arrastra un archivo cualquiera a la linea de comandos para ver sus detalles: ");
@@ -23,7 +23,7 @@ public class EX5_VerDetallesFichero {
 
 			System.out.println("El fichero '" + fileName + "' se encuentra en la ruta:\n\tRUTA RELATIVA: "+ relativePath+ "\n\tRUTA ABSOLUTA: "+ absolutePath);
 			System.out.println("\nLos permisos del fichero son:\n\tLECTURA: "+ readPermits + "\n\tESCRITURA: "+ writePermits + "\n\tEJECUCION: "+ executePermits);
-			System.out.println("\nEl tama�o total del fichero es de : " + fileSize + "bytes");
+			System.out.println("\nEl tamaño total del fichero es de : " + fileSize + "bytes");
 		} catch (Exception E) {
 			System.out.print("ERROR salvaje aparecio, el directorio no es correcto");
 		}

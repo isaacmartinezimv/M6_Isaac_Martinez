@@ -1,4 +1,6 @@
 package Bateria3_Streams.Streams_3;
+/* EJERCICIO 1.Escribe un programa en java que muestre por pantalla un fichero de texto que le 
+ * pasamos como argumento (o utilizando scanner) utilizando la clase BufferedReader */
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

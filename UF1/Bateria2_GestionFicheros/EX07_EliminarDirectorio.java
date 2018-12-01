@@ -9,12 +9,11 @@ habr�s de eliminar todos los archivos que se encuentren dentro del directorio.
 import java.io.*;
 
 
-public class EX7_EliminarDirectorio {
+public class EX07_EliminarDirectorio {
 	public static void main(String[] args) {
 		File dir = new File(".\\NuevoDir");
 
 		try {
-
 			if (dir.exists()) {
 			    for (File file : dir.listFiles()) {
 			        file.delete();
@@ -25,7 +24,6 @@ public class EX7_EliminarDirectorio {
 			} else {
 				System.out.println("El directorio seleccionado no existe");
 			}
-			
 		} catch (Exception E ) {
 			System.out.println("Error salvaje aparecio, algo funciono de manera inesperada.");
 		}

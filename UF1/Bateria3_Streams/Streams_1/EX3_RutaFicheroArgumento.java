@@ -1,5 +1,4 @@
 package Bateria3_Streams.Streams_1;
-
 /* EJERCICIO 3. Modifica el código anterior para que se le pueda
  * pasar el nombre del fichero al programa.*/
 
@@ -19,7 +18,6 @@ public class EX3_RutaFicheroArgumento {
     while ((flu.read(buf)) != -1) {     //Vamos leyendo de 20 caracteres en 20 caracteres
       System.out.println (buf);   //Imprimimos los caracteres leidos
     }
-    
     flu.close();
   }
 }

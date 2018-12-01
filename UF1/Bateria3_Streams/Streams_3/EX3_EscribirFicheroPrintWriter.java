@@ -1,4 +1,5 @@
 package Bateria3_Streams.Streams_3;
+// EJERCICIO 3. Repite el ejercicio anterior pero ahora utilizando la clase PrintWriter
 
 import java.io.BufferedReader;
 import java.io.File;

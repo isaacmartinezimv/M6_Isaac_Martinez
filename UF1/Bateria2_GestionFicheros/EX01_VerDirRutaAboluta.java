@@ -1,9 +1,8 @@
 package Bateria2_GestionFicheros;
-
 // EJERCICIO 1. Ruta absoluta (PARA SISTEMA OPERATIVO WINDOWS)
 
 import java.io.*;
-public class EX1_VerDirRutaAboluta{
+public class EX01_VerDirRutaAboluta{
 	public static void main (String[] args) {
 		String dir = "C:\\Users\\Isaac\\Downloads"; // directorio actual
 
