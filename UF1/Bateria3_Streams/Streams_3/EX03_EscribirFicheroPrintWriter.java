@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 
-public class EX3_EscribirFicheroPrintWriter {
+public class EX03_EscribirFicheroPrintWriter {
 	public static void main (String [] args) throws IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		

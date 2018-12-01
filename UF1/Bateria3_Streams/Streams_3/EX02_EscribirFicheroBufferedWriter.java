@@ -9,7 +9,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class EX2_EscribirFicheroBufferedWriter {
+public class EX02_EscribirFicheroBufferedWriter {
 	public static void main (String [] args) throws IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		

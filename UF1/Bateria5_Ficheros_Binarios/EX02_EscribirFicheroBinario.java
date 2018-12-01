@@ -11,7 +11,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class EX2_EscribirFicheroBinario {
+public class EX02_EscribirFicheroBinario {
 	public static void main (String [] args) throws IOException	{
 		try {
 			File fichero = new File ("FicheroDatos.dat");

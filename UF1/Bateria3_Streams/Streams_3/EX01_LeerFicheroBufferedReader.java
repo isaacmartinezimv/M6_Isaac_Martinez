@@ -7,7 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class EX1_LeerFicheroBufferedReader {
+public class EX01_LeerFicheroBufferedReader {
 	public static void main (String [] args) {
 		String dir = args[0]; // Directorio introducido por parametros
 

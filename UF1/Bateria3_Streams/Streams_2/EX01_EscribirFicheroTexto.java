@@ -2,7 +2,7 @@ package Bateria3_Streams.Streams_2;
 // EJERCICIO 1. Copia el ejemplo anterior y pruébalo
 
 import java.io.*;
-public class EX1_EscribirFicheroTexto {
+public class EX01_EscribirFicheroTexto {
 	public static void main (String [] args) throws IOException {
 		File fichero = new File("FicheroTexto.txt");
 		FileWriter fic = new FileWriter (fichero);

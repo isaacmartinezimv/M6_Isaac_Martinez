@@ -4,7 +4,7 @@ package Bateria3_Streams.Streams_2;
 
 import java.io.*;
 
-public class EX2_EscribirFicheroTexto {
+public class EX02_EscribirFicheroTexto {
 	  
 	public static void main (String [] args) throws IOException {
 	    File fichero = new File("FicheroTexto.txt");

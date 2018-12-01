@@ -9,7 +9,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class EX3_LeerFicheroBinario {
+public class EX03_LeerFicheroBinario {
 	public static void main (String [] args) throws IOException	{
 
 		File fichero = new File ("FicheroDatos.dat");

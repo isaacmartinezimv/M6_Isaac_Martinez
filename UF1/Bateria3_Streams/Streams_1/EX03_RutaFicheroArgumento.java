@@ -4,7 +4,7 @@ package Bateria3_Streams.Streams_1;
 
 import java.io.*;
 
-public class EX3_RutaFicheroArgumento {
+public class EX03_RutaFicheroArgumento {
   public static void main ( String [] args) throws IOException {
     System.out.print("Introduce la ruta del fichero a leer: ");
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

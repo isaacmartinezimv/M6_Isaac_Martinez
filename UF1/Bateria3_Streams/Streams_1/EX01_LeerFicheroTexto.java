@@ -3,7 +3,7 @@ package Bateria3_Streams.Streams_1;
 
 import java.io.*;
 
-public class EX1_LeerFicheroTexto {
+public class EX01_LeerFicheroTexto {
 	public static void main ( String [] args) throws IOException {
 		File fichero = new File ("./././UF1/Bateria2_Streams/Streams_1/EX1_LeerFicheroTexto.java");  // declaración fichero
 		FileReader flu = new FileReader (fichero); // creamos flujo de entrada hacia el fichero
