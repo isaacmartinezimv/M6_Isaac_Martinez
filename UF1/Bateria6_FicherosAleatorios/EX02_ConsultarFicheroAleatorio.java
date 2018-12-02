@@ -1,4 +1,8 @@
 package Bateria6_FicherosAleatorios;
+/* EJERCICIO 2. CONSULTA. Crea un programa Java que consulte los datos de un empleado del fichero 
+ * aleatorio. El programa se ejecutará desde la línea de comandos y debe recibir un identificador
+ * de empleado. Si el empleado existe se visualizarán sus datos, si no existe se visualizará un mensaje
+ * indicándolo. */
 
 import java.io.BufferedReader;
 import java.io.File;

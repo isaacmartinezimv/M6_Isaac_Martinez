@@ -1,4 +1,8 @@
 package Bateria6_FicherosAleatorios;
+/* EJERCICIO 4. MODIFICACION. Crea un programa Java que reciba desde la línea de comandos un identificador
+ * de empleado y un importe. Se debe realizar la modificación del salario. La modificación consistirá en 
+ * sumar al salario del empleado el importe introducido. El programa debe visualizar el apellido, el 
+ * salario antiguo y el nuevo. Si el identificador no existe se visualizará mensaje indicándolo.*/
 
 import java.io.File;
 import java.io.IOException;

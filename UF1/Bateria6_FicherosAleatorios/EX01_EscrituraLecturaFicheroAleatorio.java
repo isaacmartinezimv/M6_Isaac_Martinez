@@ -1,4 +1,5 @@
 package Bateria6_FicherosAleatorios;
+// EJRECICIO 1. Implementa los ejemplos anteriores y comprueba su correcto funcionamiento.
 
 import java.io.File;
 import java.io.IOException;

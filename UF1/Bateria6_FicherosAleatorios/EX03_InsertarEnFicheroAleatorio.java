@@ -1,4 +1,8 @@
 package Bateria6_FicherosAleatorios;
+/* EJERCICIO 3. INSERCION. Crea un programa Java que inserte datos en el fichero aleatorio. 
+ * El programa ejecutará desde la línea de comandos y debe recibir 4 parámetros: identificador de
+ * empleado, apellido, departamento y salario. Antes de insertar se comprobará si el identificador 
+ * existe, en ese caso se debe visualizar un mensaje indicándolo; si no existe se deberá insertar*/
 
 import java.io.File;
 import java.io.IOException;
