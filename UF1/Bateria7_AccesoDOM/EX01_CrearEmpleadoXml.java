@@ -1,4 +1,5 @@
 package Bateria7_AccesoDOM;
+// EJERCICIO 1. Copia el programa anterior y ejecútalo.
 
 import org.w3c.dom.*;
 import javax.xml.parsers.*;

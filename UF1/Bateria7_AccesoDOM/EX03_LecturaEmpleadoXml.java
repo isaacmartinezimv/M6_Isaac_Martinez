@@ -1,4 +1,5 @@
 package Bateria7_AccesoDOM;
+// EJERCICIO 3. Copia el programa anterior y ejecútalo.
 
 import java.io.File;
 import javax.xml.parsers.*;

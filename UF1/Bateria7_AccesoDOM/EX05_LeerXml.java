@@ -1,4 +1,5 @@
 package Bateria7_AccesoDOM;
+// EJERCICIO 5. Crea un programa Java que lea el documento anterior y muestre toda la información que contenga.
 
 import java.io.File;
 import javax.xml.parsers.*;
