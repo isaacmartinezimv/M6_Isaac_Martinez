@@ -1,17 +1,13 @@
 package Bateria4_Proyecto_FicherosTexto;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.io.*;
+import java.nio.file.Files;
 
 public class EX01_GeneradorXML {
+	
 	public static String logFileRoute = "";
 	public static int fileRecount = 0;
 	final static String csvFileExtension = ".csv";
@@ -19,26 +15,35 @@ public class EX01_GeneradorXML {
 	final static String xmlFileExtension = ".xml";
 	public static String mainDirectory = "";
 	
+	
 	public static void main(String[] args) throws IOException {
+				// Pedimos el directorio o la ruta del arvhico csv
 				System.out.println("Directorio del archivo/s CSV: ");
 				BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 				String csvDirectory = reader.readLine();
-			
+				
+				/* Para saber como convertir, comprobamos si se trata de una ruta que contine
+				 * archivos csv o se trata de un fichero csv directamente */
 				File fileCSV = new File(csvDirectory);
 				Boolean csvIsDirectory = checkDirectory(fileCSV);
 				
+				// Creamos y empezamos a escribir en el log, en la misma ruta que el fichero
 				writeLogFile(logFileRoute+"\\logFile.log", "Directorio del archivo/s CSV guardado.");
 
+				// Introducimos el directorio donde se encuentra el archivo con etiquetas
 				System.out.println("Ruta al archivo de etiquetas (sin extension): ");
 				String tagFileDirectory = reader.readLine();
 				File tagFile = new File(tagFileDirectory+textFileExtension);
 				
+				// Actualizamos el log
 				writeLogFile(logFileRoute+"\\logFile.log", "Directorio de etiquetas guardado.");
 
+				// Establecemos un directorio de salida
 				System.out.println("Nombre fichero/s de salida (sin extension): ");
 				String outputFileName = reader.readLine();
 				
 				//TODO : Que cambie el archivo CSV (multi CSV)
+				// Hacemos la conversión en función de si se trata de un directorio o fichero
 				if (csvIsDirectory == true) {
 					searchCSV(fileCSV, csvFileExtension);
 					File csvFile = new File (mainDirectory);
@@ -52,8 +57,10 @@ public class EX01_GeneradorXML {
 					File outputDirectory = new File(directory+"\\"+outputFileName+xmlFileExtension);
 					xmlConversion(tagFile, fileCSV,outputDirectory);
 				}
+				
 				writeLogFile(logFileRoute+"\\logFile.log", "Guardando directorio de salida...");
 			}
+	
 	
 	public static boolean checkDirectory(File ruta) {
 		String outputDirectory = "";
@@ -99,6 +106,7 @@ public class EX01_GeneradorXML {
 	}
 	
 	private static String[] pickUpLabels(BufferedReader labelReader) throws IOException {
+		// Guardamos las etiquetas del archivo especificado
     	String label = null;
     	String labels = "";
     	while ((label = labelReader.readLine()) != null) {
@@ -115,7 +123,9 @@ public class EX01_GeneradorXML {
 		BufferedReader dataReader = new BufferedReader(new FileReader(dataFile));
 		BufferedWriter outputWriter = new BufferedWriter(new FileWriter(outputFile));
 		
+		// Generamos la etiqueta raiz
 		outputWriter.write(String.format("<%s>", "raiz") + "\n");
+		
 		String[] labels = pickUpLabels(labelsReader);
 		String csvLine = null;
 		int lineNumber = 0;
@@ -123,6 +133,7 @@ public class EX01_GeneradorXML {
 		String element = "";
 		
 		while ((csvLine = dataReader.readLine()) != null) {
+			// Lee linea a linea el archivo y guarda la informacion
 			String[] csvFullData = csvLine.split(",\\s?");
 			
 			int max = csvFullData.length;
@@ -153,6 +164,7 @@ public class EX01_GeneradorXML {
 			outputWriter.write(textLine);
 		}
 		
+		// Se general la etiqueta de cierre del elemento raiz
 		outputWriter.write(String.format("</%s>", "raiz"));
 		writeLogFile(logFileRoute+"\\logFile.log", "Conversion realizada con exito.");
 		System.out.println("Â¡Â¡Conversion realizada!!\n");

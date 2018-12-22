@@ -16,8 +16,8 @@ public class EX02_EscribirFicheroBinario {
 		try {
 			File fichero = new File ("FicheroDatos.dat");
 
-			String [] nombres = new String[] {"Addrianne", "Olfrid", "Vilkas", "Lydia", "Farkas"};
-			int [] edades = new int[] {10,25,31,56,42};
+			String [] nombres = new String[] {"Fulano", "Wombat", "Mengana", "Paco", "Manoli"};
+			int [] edades = new int[] {7,20,36,51,46};
 
 			DataOutputStream fileout = new DataOutputStream (new FileOutputStream(fichero));
 
@@ -26,7 +26,7 @@ public class EX02_EscribirFicheroBinario {
 				fileout.writeInt(edades[i]);
 			}
 			fileout.close();
-			System.out.println("El archivo se ha creado con �xito");
+			System.out.println("El archivo se ha creado correctamente");
 		}
 		
 		catch (IOException io) {

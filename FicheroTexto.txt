@@ -1,1 +1,1 @@
- Esto es una prueba con FileWriter*
+Albacete, Avila, Badajoz, Caceres, Huelva, Jaen, Madrid, Segovia, Soria, Toledo, Valladolid, Zamora

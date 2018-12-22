@@ -5,7 +5,7 @@ import java.io.*;
 
 public class EX01_LeerFicheroTexto {
 	public static void main ( String [] args) throws IOException {
-		File fichero = new File ("./././UF1/Bateria2_Streams/Streams_1/EX1_LeerFicheroTexto.java");  // declaración fichero
+		File fichero = new File ("./././UF1/Bateria3_Streams/Streams_1/EX01_LeerFicheroTexto.java");  // declaración fichero
 		FileReader flu = new FileReader (fichero); // creamos flujo de entrada hacia el fichero
 
 		int i;
@@ -15,3 +15,4 @@ public class EX01_LeerFicheroTexto {
 		flu.close();
 	}
 }
+
