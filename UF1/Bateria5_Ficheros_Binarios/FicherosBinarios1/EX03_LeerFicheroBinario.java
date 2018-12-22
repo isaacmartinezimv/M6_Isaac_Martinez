@@ -1,4 +1,4 @@
-package Bateria5_Ficheros_Binarios;
+package Bateria5_Ficheros_Binarios.FicherosBinarios1;
 /* EJERCICIO 3. Ahora escribe un programa que permita visualizar los datos grabados anteriormente en el
  * fichero FicheroDatos.dat. Se deben obtener en el mismo orden en el que se escribieron, es decir, primero
  * obtenemos el nombre y luego la edad. */
