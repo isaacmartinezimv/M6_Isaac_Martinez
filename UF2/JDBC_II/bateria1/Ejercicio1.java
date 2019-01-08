@@ -17,7 +17,7 @@ public class Ejercicio1 {
 				String typeName = result.getString(6);
 				String size = result.getString(7);
 				String nullType = result.getString(11);
-				System.out.printf("%s - name: %s, typeName: %s, size: %s, nullAceptedBolean: %s %n", size,name, typeName, size, nullType);
+				System.out.printf("name: %s, typeName: %s, size: %s, nullAceptedBolean: %s %n",name, typeName, size, nullType);
 			}
 			conexion.close();
 		}
