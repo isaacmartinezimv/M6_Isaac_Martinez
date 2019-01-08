@@ -9,15 +9,22 @@ public class Ejercicio1 {
 			Connection conexion = DriverManager.getConnection
 					("jdbc:mysql://localhost/ejemplo","austria","austria");
 			DatabaseMetaData dbmd = conexion.getMetaData();
-			ResultSet result = null;
-
-			result = dbmd.getColumns(null,"ejemplo","depart",null);
-			while (result.next()){
-				String name = result.getString(4);
-				String typeName = result.getString(6);
-				String size = result.getString(7);
-				String nullType = result.getString(11);
-				System.out.printf("name: %s, typeName: %s, size: %s, nullAceptedBolean: %s %n",name, typeName, size, nullType);
+			ResultSet resul = null;
+			String nombre = dbmd.getDatabaseProductName();
+			String driver = dbmd.getDriverName();
+			String url = dbmd.getURL();
+			String usuario = dbmd.getUserName();
+			System.out.printf("Nombre: %s %n", nombre);
+			System.out.printf("Nombre: %s %n", driver);
+			System.out.printf("Nombre: %s %n", url);
+			System.out.printf("Nombre: %s %n", usuario);
+			resul = dbmd.getTables(null,"ejemplo",null,null);
+			while (resul.next()){
+				String catalogo = resul.getString(1);
+				String esquema = resul.getString(2);
+				String tabla = resul.getString(3);
+				String tipo = resul.getString(4);
+				System.out.printf("%s - Catalogo: %s, Esquema: %s, Nombre: %s %n", tipo,catalogo, esquema, tabla);
 			}
 			conexion.close();
 		}
