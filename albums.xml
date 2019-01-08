@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<albums>
+    <album> 
+        <autor>Nirvana</autor>
+        <titulo>Smells like teen spirit</titulo> 
+        <formato>AAC</formato> 
+    </album>
+    <album> 
+        <autor>Metallica</autor>
+        <titulo>Nothing else matter</titulo> 
+        <formato>WAV</formato> 
+    </album>
+    <album> 
+        <autor>R.E.M</autor>
+        <titulo>Losing my religion</titulo> 
+        <formato>MIDI</formato> 
+    </album>
+    <album> 
+        <autor>Oasis</autor>
+        <titulo>Wonderwall</titulo> 
+        <formato>MP3</formato> 
+    </album>
+    <album> 
+        <autor>The cranberries</autor>
+        <titulo>Zombie</titulo> 
+        <formato>MP3</formato> 
+    </album>
+    <album> 
+        <autor>Bon Jovi</autor>
+        <titulo>Always</titulo> 
+        <formato>AAC</formato> 
+    </album>
+    <album> 
+        <autor>Radiohead</autor>
+        <titulo>Creep</titulo> 
+        <formato>MP3</formato> 
+    </album>
+    <album> 
+        <autor>Guns 'n' Roses</autor>
+        <titulo>Knockin' on heaven's door</titulo> 
+        <formato>MKV</formato> 
+    </album>
+    <album> 
+        <autor>U2</autor>
+        <titulo>One</titulo> 
+        <formato>MP3</formato> 
+    </album>
+    <album> 
+        <autor>Johnny Cash</autor>
+        <titulo>Ring of fire</titulo> 
+        <formato>MP3</formato> 
+    </album>
+</albums>

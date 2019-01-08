@@ -1,0 +1,10 @@
+EJERCICIO 4. Vuelve a ejecutar los problemas anteriores pero en los pasos intermedios
+trata de leer el fichero "FicheroDatos.dat" con algún editor de texto del
+sistema. ¿Qué pasa?
+-----------------------------------------------------------------------------------
+
+Si abrimos un fichero binario con un editor de textos normal (Office o WordPad),
+los datos binarios no son intepretados y nos puede dar error o leer directamente
+un conjunto de carácteres que no podemos identificar. En otros editores (Brackets o
+Sublime), podemos encontrar que interpretan una parte de los datos, en concreto
+los UTF, pero sucede lo mismo con el resto de datos.
