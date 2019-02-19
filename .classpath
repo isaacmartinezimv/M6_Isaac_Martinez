@@ -7,7 +7,12 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/dam2/Baixades/mysql-connector-java-8.0.13.jar">
+	<classpathentry kind="lib" path="/home/jessy/Baixades/mysql-connector-java-8.0.15.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/jessy/Baixades/neodatis-odb-1.9.30.689.zip">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
