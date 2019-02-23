@@ -7,20 +7,19 @@ package bateria2_JDBC2.I;
 import java.sql.*;
 
 public class EX04_Ejercicio04 {
+
 	public static void main (String [] args) {
-		
+
 		try {
+
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conexion = DriverManager.getConnection
-					("jdbc:mysql://localhost/ejemplo","austria","austria");
-			
-			DatabaseMetaData dbmd = conexion.getMetaData();
+			Connection connexion = DriverManager.getConnection("jdbc:mysql://localhost/ejemplo","austria","austria");
+			DatabaseMetaData dbmd = connexion.getMetaData();
 			String sql = "SELECT * from depart";
 
-			Statement statement = conexion.createStatement();
+			Statement statement = connexion.createStatement();
 			ResultSet result = statement.executeQuery(sql);
 			ResultSetMetaData rsmd =  result.getMetaData();  
-
 			int columns = rsmd.getColumnCount();
 			result = dbmd.getColumns(null,"ejemplo","depart",null);
 
@@ -30,7 +29,7 @@ public class EX04_Ejercicio04 {
 				String typeName = result.getString(6);
 				System.out.printf("type: %s %n", typeName);
 			}
-			conexion.close();
+			connexion.close();
 		}
 		catch (ClassNotFoundException cn) {cn.printStackTrace();}
 		catch (SQLException e) {e.printStackTrace();}

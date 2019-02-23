@@ -6,26 +6,26 @@ package bateria2_JDBC2.II;
 import java.sql.*;
 
 public class EX01_Ejercicio01 {
+	
 	public static void main (String[] args){
 
 		try{
+			
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conexion = DriverManager.getConnection
-					("jdbc:mysql://localhost/ejemplo","austria","austria");
+			Connection connexion = DriverManager.getConnection("jdbc:mysql://localhost/ejemplo","austria","austria");
 
+			// Introduces by arguments
 			String depart = args[0];
 			String increment = args[1];
 
 			String sql = String.format("UPDATE emple SET salario = salario + %s where dept_no = %s", increment, depart);
-			Statement statement = conexion.createStatement();
+			Statement statement = connexion.createStatement();
 			
-			int filas = statement.executeUpdate(sql);
-			System.out.printf("Filas afectadas: %d %n", filas);
-
+			int filasFinal = statement.executeUpdate(sql);
+			System.out.printf("Filas afectadas: %d %n", filasFinal);
 			statement.close();
-			conexion.close();
+			connexion.close();
 		}
-		
 		catch (ClassNotFoundException cn) {cn.printStackTrace();}
 		catch (SQLException e) {e.printStackTrace();}
 	}

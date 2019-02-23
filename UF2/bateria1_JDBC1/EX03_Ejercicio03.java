@@ -16,23 +16,24 @@ public class EX03_Ejercicio03 {
 		String localidad = reader.readLine();
 
 		try {
+
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/ejemplo","austria","austria");
+			Connection conexion = DriverManager.getConnection
+					("jdbc:mysql://localhost/ejemplo","austria","austria");
 			Statement sentencia = conexion.createStatement();
-			
+
 			String sql = "SELECT * from depart join emple using(dept_no) where depart.loc = '"+localidad+"';";
 			ResultSet result = sentencia.executeQuery(sql);
 
 			while (result.next()) {
 				System.out.printf("%s, %s, %d %n",
-						result.getString("apellido"),
-						result.getString("oficio"),
-						result.getInt("salario"));
+						result.getString("apellido"), result.getString("oficio"), result.getInt("salario"));
 			}
 
 			result.close();
 			sentencia.close();
 			conexion.close();
+
 		} catch (ClassNotFoundException cn) {
 			cn.printStackTrace();
 		} catch (SQLException e) {

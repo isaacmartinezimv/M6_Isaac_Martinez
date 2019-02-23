@@ -9,9 +9,7 @@ public class EX01_Ejercicio01 {
 
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conexion = DriverManager.getConnection
-					("jdbc:mysql://localhost/ejemplo","austria","austria");
-			
+			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/ejemplo","austria","austria");
 			DatabaseMetaData dbmd = conexion.getMetaData();
 			ResultSet result = null;
 
@@ -34,7 +32,6 @@ public class EX01_Ejercicio01 {
 				String tipo = result.getString(4);
 				System.out.printf("%s - Catalogo: %s, Esquema: %s, Nombre: %s %n", tipo, catalogo, esquema, tabla);
 			}
-			
 			conexion.close();
 		}
 		catch (ClassNotFoundException cn) {cn.printStackTrace();}

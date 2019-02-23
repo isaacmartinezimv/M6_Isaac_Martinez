@@ -13,69 +13,18 @@ import org.neodatis.odb.Objects;
 import bateria5_BDOO.I.Jugadores;
 import bateria5_BDOO.I.Paises;
 
-class Paises {
-	private int id;
-	private String nombrePais;
-
-	public Paises(int id, String nombrepais) {
-		super();
-		this.id = id;
-		this.nombrePais = nombrepais;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public String getNombrepais() {
-		return nombrePais;
-	}
-
-	public void setNombrepais(String nombrePais) {
-		this.nombrePais = nombrePais;
-	}
-
-	@Override
-	public String toString() {
-		return nombrePais;
-	}
-}
-
-
-class Jugadores {
-	private Paises pais;
-
-	public Jugadores(Paises pais) {
-		super();
-		this.pais = pais;
-	}
-
-	public Paises getPais() {
-		return pais;
-	}
-
-	public void setPais(Paises pais) {
-		this.pais = pais;
-	}
-}
-
-
 public class EX01_Ejercicio01 {
 	public static void main(String[] args) {
-		
+
 		Paises pais1 = new Paises(1,"Reino Unido");
 		Paises pais2 = new Paises(2,"Alemania");
 		Paises pais3 = new Paises(3,"España");
 		Paises pais4 = new Paises(4,"Francia");
 
-		Jugadores jugador1 = new Jugadores(pais1);
-		Jugadores jugador2 = new Jugadores(pais2);
-		Jugadores jugador3 = new Jugadores(pais3);
-		Jugadores jugador4 = new Jugadores(pais4);
+		Jugadores jugador1 = new Jugadores("Kevin Richardson", "Furbol", "Newcastle upon Tyn", 22, pais1);
+		Jugadores jugador2 = new Jugadores("Dennis Schröder", "Basket", "Braunschweig", 23, pais2);
+		Jugadores jugador3 = new Jugadores("Rafael Nadal", "Tenis", "Manacor", 24, pais3);
+		Jugadores jugador4 = new Jugadores("Jean van de Valde", "Golf", "Paris", 25, pais4);
 
 		ODB odb = ODBFactory.open("EQUPOS.DB");     // Abrir 
 		odb.store(pais1);
@@ -89,7 +38,6 @@ public class EX01_Ejercicio01 {
 
 		Objects<Paises> objectsPaises = odb.getObjects(Paises.class);
 		Objects<Jugadores> objectsJugadores = odb.getObjects(Jugadores.class);    //recuperamos todos los objetos
-
 		System.out.printf("%d Paises: %n", objectsPaises.size());
 		System.out.printf("%d Jugadores: %n", objectsJugadores.size());
 
@@ -100,7 +48,6 @@ public class EX01_Ejercicio01 {
 		} 
 
 		System.out.print("");
-
 		while(objectsPaises.hasNext()) {                               // visualizar los objetos     
 			Paises pai = objectsPaises.next();
 			System.out.printf("%d: %s %s %n", i++, pai.getId(), pai.getNombrepais());  
