@@ -7,7 +7,7 @@ public class Emple {
 	private String apellido;
 	private String oficio;
 	private Emple dir;
-	private java.sql.Date fechaAlt;
+	private Date fechaAlt;
 	private float comision;
 	private Depart dept;
 	
