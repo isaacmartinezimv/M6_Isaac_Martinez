@@ -17,7 +17,7 @@ public class ConstructorDataBase {
 		Emple emple1 = new Emple(5, "Bardem", "Director Arte", directorGeneral, date, (float)5983.77, dep2);
 		Emple emple2 = new Emple(2, "Coronado", "Actor", emple1, date, (float)3712.87, dep2);
 		Emple emple3 = new Emple(3, "Chicote", "Chef", directorGeneral, date, (float)3298.04, dep1);
-		Emple emple4 = new Emple(4, "Susi", "Cocinera", emple3, date, (float)1840.32, dep2);
+		Emple emple4 = new Emple(4, "Susi", "Cocinera", emple3, date, (float)1840.32, dep1);
 		Emple emple5 = new Emple(6, "Rodriguez", "Contable", directorGeneral, date, (float)2167.73, dep3);
 		Emple emple6 = new Emple(7, "Manzanares", "Secretario", emple5, date, (float)1724.12, dep3);
 		
