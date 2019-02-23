@@ -13,9 +13,9 @@ public class EX03_Ejercicio03 {
 		Objects<Jugadores> objects = odb.getObjects(Jugadores.class);
 
 		while(objects.hasNext()){  
-			Jugadores jug = objects.next();
-			jug.setEdad(jug.getEdad() + 1);
-			odb.store(jug);
+			Jugadores jugador = objects.next();
+			jugador.setEdad(jugador.getEdad() + 1);
+			odb.store(jugador);
 		}
 		odb.commit();
 		odb.close(); 

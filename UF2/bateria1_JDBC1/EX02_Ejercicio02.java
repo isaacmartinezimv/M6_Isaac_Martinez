@@ -12,7 +12,8 @@ public class EX02_Ejercicio02 {
 		try {
 
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/ejemplo","austria","austria");
+			Connection conexion = DriverManager.getConnection
+					("jdbc:mysql://localhost/ejemplo","austria","austria");
 			Statement sentencia = conexion.createStatement();
 
 			String sql = "SELECT * from emple join depart using(dept_no) where salario = (select MAX(salario) from emple);";

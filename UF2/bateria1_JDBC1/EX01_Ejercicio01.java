@@ -9,7 +9,8 @@ public class EX01_Ejercicio01 {
 
 		try{
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conexion=DriverManager.getConnection("jdbc:mysql://localhost/ejemplo","austria","austria");
+			Connection conexion=DriverManager.getConnection
+					("jdbc:mysql://localhost/ejemplo","austria","austria");
 			Statement sentencia =conexion.createStatement();
 
 			String sql = "SELECT * from emple where dept_no = 10";
