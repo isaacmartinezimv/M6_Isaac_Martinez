@@ -1,21 +1,19 @@
 package proyecto_NeoDartis;
 
-import java.sql.Date;
-
 public class Emple {
 	private int empNo;
 	private String apellido;
 	private String oficio;
 	private Emple dir;
-	private Date fechaAlt;
+	private  java.sql.Date fechaAlt;
 	private float comision;
 	private Depart dept;
-	
+
 	public Emple() {
 		super();
 	}
 
-	public Emple(int empNo, String apellido, String oficio, Emple dir, Date fechaAlt, float comision, Depart dept) {
+	public Emple(int empNo, String apellido, String oficio, Emple dir, java.sql.Date fechaAlt, float comision, Depart dept) {
 		super();
 		this.empNo = empNo;
 		this.apellido = apellido;
