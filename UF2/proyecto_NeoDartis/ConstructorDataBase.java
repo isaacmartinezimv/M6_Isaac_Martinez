@@ -8,7 +8,7 @@ public class ConstructorDataBase {
 		Depart dep1 = new Depart(10,"COCINA","Granada");
 		Depart dep2 = new Depart(20,"ARTE","Barcelona");
 		Depart dep3 = new Depart(30,"CONTABILIDAD","Madrid");
-		Depart dep4 = new Depart(30,"DIRECCION","Santander");
+		Depart dep4 = new Depart(40,"DIRECCION","Santander");
 		java.sql.Date date = new java.sql.Date(System.currentTimeMillis());
 		
 		Emple directorGeneral = new Emple(1, "Jimenez", "Director", null, date, (float)7356.23, dep4);
