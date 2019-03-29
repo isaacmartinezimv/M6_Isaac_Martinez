@@ -1,4 +1,4 @@
-package bateria4_ActualizarxQuery;
+package bateria3_ActualizarxQuery;
 
 public class EX01_Ejercicio01 {
 
