@@ -8,37 +8,37 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Feuer/Developer/jars/mysql-connector-java-8.0.15.jar">
+	<classpathentry kind="lib" path="/home/jessy/Baixades/mysql-connector-java-8.0.15.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Feuer/Developer/jars/mongo-java-driver-3.10.1.jar">
+	<classpathentry kind="lib" path="/home/jessy/Baixades/jar_files(1)/mongo-java-driver-3.10.1.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Feuer/Developer/jars/neodatis-odb-1.9.30.689.jar">
+	<classpathentry kind="lib" path="/home/jessy/Baixades/neodatis-odb-1.9.30.689/neodatis-odb-1.9.30-689/neodatis-odb-1.9.30.689.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Feuer/Developer/jars/exist-xqj-api-1.0.1/lib/exist-xqj-1.0.1.jar">
+	<classpathentry kind="lib" path="/home/jessy/Baixades/exist-xqj-api-1.0.1/lib/exist-xqj-1.0.1.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Feuer/Developer/jars/exist-xqj-api-1.0.1/lib/exist-xqj-examples.jar">
+	<classpathentry kind="lib" path="/home/jessy/Baixades/exist-xqj-api-1.0.1/lib/exist-xqj-examples.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Feuer/Developer/jars/exist-xqj-api-1.0.1/lib/xqj2-0.0.1.jar">
+	<classpathentry kind="lib" path="/home/jessy/Baixades/exist-xqj-api-1.0.1/lib/xqj2-0.0.1.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Feuer/Developer/jars/exist-xqj-api-1.0.1/lib/xqjapi.jar">
+	<classpathentry kind="lib" path="/home/jessy/Baixades/exist-xqj-api-1.0.1/lib/xqjapi.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
