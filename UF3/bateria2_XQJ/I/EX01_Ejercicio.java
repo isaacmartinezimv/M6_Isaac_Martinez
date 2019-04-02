@@ -9,7 +9,7 @@ public class EX01_Ejercicio {
 		try{
 			XQDataSource server = new ExistXQDataSource();
 
-			server.setProperty ("serverName", "localhost");
+			server.setProperty ("serverName", "192.168.56.102");
 			server.setProperty ("port","8080");
 			server.setProperty ("user","admin");
 			server.setProperty ("password","austria");

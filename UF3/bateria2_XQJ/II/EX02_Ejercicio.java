@@ -1,11 +1,11 @@
 package bateria2_XQJ.II;
 
 /* Ejercicio 2. A partir de los documentos productos.xml y zonas.xml, haz un 
- * programa que reciba un número de zona por parámetro y genere un documento 
+ * programa que reciba un nï¿½mero de zona por parï¿½metro y genere un documento 
  * con nombre zonaXX.xml donde XX es la zona solicitada. El documento debe 
  * contener los productos de esta zona y las siguientes etiquetas: <cod_prod>,
- * <denominación>, <precio>, <nombre_zona>, <director> y <stock>. Donde el stock
- * se calcula restando el stock actual y el stock mínimo.*/
+ * <denominaciï¿½n>, <precio>, <nombre_zona>, <director> y <stock>. Donde el stock
+ * se calcula restando el stock actual y el stock mï¿½nimo.*/
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -41,8 +41,8 @@ public class EX02_Ejercicio {
 			String inputZona = reader.readLine();
 
 			consulta = conn.prepareExpression(
-					"let $pro := /productos/produc[cod_zona="+inputZona+"]"
-							+ " let $numerozona := /zonas/zona[cod_zona="+inputZona+"]/nombre"
+					"let $producto := /productos/produc[cod_zona="+inputZona+"]"
+							+ " let $zona := /zonas/zona[cod_zona="+inputZona+"]/nombre"
 							+ " let $directorzona := /zonas/zona[cod_zona="+inputZona+"]/director"
 							+ " return"
 							
@@ -55,7 +55,7 @@ public class EX02_Ejercicio {
 							+ " <cod_prod>{data($producto/cod_prod)}</cod_prod>"
 							+ " <denominacion>{data($producto/denominacion)}</denominacion>"
 							+ " <precio>{data($producto/precio)}</precio>"
-							+ " <nombre_zona>{data($numerozona)}</nombre_zona>"
+							+ " <nombre_zona>{data($zona)}</nombre_zona>"
 							+ " <director>{data($directorzona)}</director>"
 							+ " <stock>{data($stock)}</stock>"
 							+ " </producto>"
@@ -82,7 +82,7 @@ public class EX02_Ejercicio {
 
 			conn.close();
 			writer.close();
-			System.out.print("Se ha creado el fichero "+fileName+ " con éxito.");
+			System.out.print("Se ha creado el fichero "+fileName+ " con ï¿½xito.");
 
 		} catch (XQException ex) {
 			System.out.println("Error al operar"+ex.getMessage());
