@@ -29,7 +29,7 @@ public class Proyecto_MongoDB {
 			System.out.println("--------------------------------------------");
 			System.out.println("|         Bienvenido a TodoHardware        |");
 			System.out.println("--------------------------------------------");
-			System.out.println("              Â¿Que desea hacer?             ");
+			System.out.println("              ¿Que desea hacer?             ");
 			System.out.println("");
 			System.out.println("   1. Insertar una pieza nueva en la Base de Datos: ");
 			System.out.println("   2. Visualizar todas las piezas de la Base de Datos: ");
