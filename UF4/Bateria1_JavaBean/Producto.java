@@ -1,4 +1,4 @@
-package javaBean;
+package Bateria1_JavaBean;
 import java.beans.*;
 import java.io.Serializable;
 

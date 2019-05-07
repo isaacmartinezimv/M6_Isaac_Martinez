@@ -3,6 +3,7 @@
 	<classpathentry kind="src" path="UF1"/>
 	<classpathentry kind="src" path="UF2"/>
 	<classpathentry kind="src" path="UF3"/>
+	<classpathentry kind="src" path="UF4"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>
