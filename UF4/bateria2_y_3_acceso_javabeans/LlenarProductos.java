@@ -1,4 +1,4 @@
-package bateria2_acceso_javabeans;
+package bateria2_y_3_acceso_javabeans;
 
 public class LlenarProductos {
 	public static void main(String[] args) {

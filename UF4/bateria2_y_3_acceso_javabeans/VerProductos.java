@@ -1,4 +1,4 @@
-package bateria2_acceso_javabeans;
+package bateria2_y_3_acceso_javabeans;
 
 import org.neodatis.odb.Objects;
 

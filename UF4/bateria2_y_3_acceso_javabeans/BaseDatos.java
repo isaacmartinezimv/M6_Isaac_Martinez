@@ -1,4 +1,4 @@
-package bateria2_acceso_javabeans;
+package bateria2_y_3_acceso_javabeans;
 
 import java.math.BigDecimal;
 import org.neodatis.odb.ODB;
