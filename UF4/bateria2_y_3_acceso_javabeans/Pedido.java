@@ -3,15 +3,17 @@ package bateria2_y_3_acceso_javabeans;
 import java.beans.*;
 import java.io.Serializable;
 import java.util.Date;
+
 @SuppressWarnings("serial")
 public class Pedido implements Serializable, PropertyChangeListener {     
-   
-	private int numeroPedido;
+    private int numeroPedido;
     private Producto producto;
     private Date fecha;
     private int cantidad;   
     
-    public Pedido() { }
+    public Pedido() { 
+    
+    }
     
     public Pedido (int numeroPedido, Producto producto, Date fecha, int cantitad) {
             this.numeroPedido = numeroPedido;
@@ -20,11 +22,19 @@ public class Pedido implements Serializable, PropertyChangeListener {
             this.cantidad = cantitad;
     }
    
-    
+    @Override
     public void propertyChange(PropertyChangeEvent evt) {
-    	//PENDIENTE
-	}
-    
+    	if (evt.getPropertyName().equals("stockactual")) {
+	    	BaseDatos db = new BaseDatos();
+	    	
+	    	setNumeroPedido(db.getNuevoIdPedido());
+	    	setFecha(new Date(System.currentTimeMillis()));
+	    	setCantidad((int)evt.getOldValue() - (int)evt.getNewValue());
+	    	db.insertarPedido(this);
+	    	
+	    	db.cerrarBD();
+    	}
+    }
     
 	public int getNumeroPedido() {
 		return numeroPedido;
@@ -47,12 +57,7 @@ public class Pedido implements Serializable, PropertyChangeListener {
 	}
 	
 	public void setFecha(Date fecha) {
-		
-		if (fecha == null) {
-			this.fecha = new Date(System.currentTimeMillis());
-		} else {
-			this.fecha = fecha;
-		}
+		this.fecha = fecha;
 	}
 	
 	public int getCantidad() {

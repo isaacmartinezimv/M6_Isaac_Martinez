@@ -1,8 +1,13 @@
 package bateria2_y_3_acceso_javabeans;
 
-public class LlenarProductos {
-	public static void main(String[] args) {
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
+public class LlenarProductos {
+
+	public static void main(String[] args) {
+		
 		BaseDatos db = new BaseDatos();
 		
 		Producto p1 = new Producto(1, "Duruss Cobalt", 10, 3, 220);
