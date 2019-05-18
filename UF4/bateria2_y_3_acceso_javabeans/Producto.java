@@ -83,12 +83,10 @@ public class Producto implements Serializable {
 		this.venta = db.crearVenta(this.idproducto, cantidad);
 		db.cerrarBD();
 		
-		if (this.stockactual < getStockminimo()) // hay que realizar pedido
-		{
+		if (this.stockactual < getStockminimo()) { // hay que realizar pedido
 			propertySupport.firePropertyChange("stockactual", valorAnterior, this.stockactual);
 			this.stockactual = valorAnterior; // dejamos el stock anterior, no actualizamos
 		}
-		
 		
 	}
 

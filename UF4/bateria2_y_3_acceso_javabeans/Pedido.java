@@ -12,7 +12,6 @@ public class Pedido implements Serializable, PropertyChangeListener {
     private int cantidad;   
     
     public Pedido() { 
-    
     }
     
     public Pedido (int numeroPedido, Producto producto, Date fecha, int cantitad) {
